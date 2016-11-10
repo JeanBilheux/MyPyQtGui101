@@ -1,0 +1,4 @@
+include README.md
+include mygui/*
+recursive-include icons *.png *.svg *.ico
+
