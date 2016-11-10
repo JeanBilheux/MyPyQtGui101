@@ -18,11 +18,13 @@ class FileHandler(object):
         if file_name:
             self.parent.ui.tiff_file_label.setText(file_name)
             self.load_image(file_name)
-            
+            self.display_image()
             
     def load_image(self, filename):
-        
         data = Image.open(filename)
         self.data = data
         
+    def display_image(self):
+        self.parent.ui.widget.canvas.ax.imshow(self.data)
+        self.parent.ui.widget.draw()
             
