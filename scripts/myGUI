@@ -18,6 +18,8 @@ except:
 
 import mygui.interfaces.ui_mainWindow
 
+from mygui.file_handler import FileHandler
+
 
 class MainWindow(QMainWindow, mygui.interfaces.ui_mainWindow.Ui_MainWindow):
 
@@ -35,7 +37,8 @@ class MainWindow(QMainWindow, mygui.interfaces.ui_mainWindow.Ui_MainWindow):
 
 
     def browse_button_clicked(self):
-        pass
+        o_file_handler = FileHandler(parent = self)
+        o_file_handler.browse_tiff_file()
 
 
 def main():
