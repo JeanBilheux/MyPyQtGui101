@@ -26,7 +26,6 @@
      <height>0</height>
     </size>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout"/>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
