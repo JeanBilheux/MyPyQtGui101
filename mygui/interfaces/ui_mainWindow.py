@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.tiff_file_label.setObjectName(_fromUtf8("tiff_file_label"))
         self.horizontalLayout.addWidget(self.tiff_file_label)
         self.verticalLayout.addLayout(self.horizontalLayout)
-        self.widget = QtGui.QWidget(self.centralwidget)
+        self.widget = MPLWidget(self.centralwidget)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -102,3 +102,4 @@ class Ui_MainWindow(object):
         self.action2_Normalization_2.setText(_translate("MainWindow", "2. Normalization", None))
         self.action3_Normalized_Data.setText(_translate("MainWindow", "3. Normalized Data", None))
 
+from mplwidget import MPLWidget
